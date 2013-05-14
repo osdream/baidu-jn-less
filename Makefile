@@ -38,6 +38,7 @@ less:
 	@@echo "})(window);" >> ${DIST}
 	@@echo ${DIST} built.
 
+# see https://github.com/cloudhead/less.js/pull/625
 rhino:
 	@@mkdir -p dist
 	@@touch ${RHINO}
@@ -45,6 +46,7 @@ rhino:
 	      build/ecma-5.js\
 	      ${SRC}/parser.js\
 	      ${SRC}/functions.js\
+	      ${SRC}/colors.js\
 	      ${SRC}/tree/*.js\
 	      ${SRC}/tree.js\
 	      ${SRC}/rhino.js > ${RHINO}
