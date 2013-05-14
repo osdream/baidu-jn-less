@@ -29,6 +29,7 @@ fs.readdirSync('test/less').forEach(function (file) {
                 sys.print(stylize("ERROR: " + (err && err.message), 'red'));
             } else {
                 sys.print(stylize("FAIL", 'yellow'));
+                fs.writeFileSync(path.join('test/my', name) + '.css', less);
             }
             sys.puts("");
         });

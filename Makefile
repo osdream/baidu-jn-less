@@ -67,11 +67,11 @@ clean:
 dist: clean min
 	git add dist/*
 	git commit -a -m "(dist) build ${VERSION}"
-	git archive master --prefix=less/ -o less-${VERSION}.tar.gz
-	npm publish less-${VERSION}.tar.gz
+	git archive master --prefix=less/ -o baidu-jn-less-${VERSION}.tar.gz
+	npm publish baidu-jn-less-${VERSION}.tar.gz
 
 stable:
-	npm tag less ${VERSION} stable
+	npm tag baidu-jn-less ${VERSION} stable
 
 
 .PHONY: test benchmark
