@@ -1,20 +1,6 @@
-less.js
+baidu-jn-less
 =======
 
-The **dynamic** stylesheet language.
+This project originate from <https://github.com/cloudhead/less.js>
 
-<http://lesscss.org>
-
-about
------
-
-This is the JavaScript, and now official, stable version of LESS.
-
-For more information, visit <http://lesscss.org>.
-
-license
--------
-
-See `LICENSE` file.
-
-> Copyright (c) 2009-2011 Alexis Sellier
+Fix the import-once bug && support data-uri for image which will compiled as BASE64 data.
