@@ -14,7 +14,11 @@
     "email": "osdream.song@gmail.com"
   },
   "contributors": [],
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "dependencies": {
+    "mime": "~1.2.9"
+  },
+  "repository": "https://github.com/osdream/baidu-jn-less.git",
   "bin": {
     "lessc": "./bin/lessc"
   },
